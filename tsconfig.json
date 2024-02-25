@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+		"alwaysStrict": true,
+		"baseUrl": "./src",
+		"outDir": "dist",
+		"noEmitOnError": true,
+		"sourceMap": true,
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"module": "ES2022",
+		"target": "es2022",
+		"paths": {
+			"@/*": ["src/*"],
+			"@types/*" : ["types/*"],
+			"@types" : ["types/index.d.ts"]
+		},
+		"skipLibCheck": true,
+		"noErrorTruncation": true,
+		"forceConsistentCasingInFileNames": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"strict": true
+	},
+	"exclude": ["dist"],
+	"include": [ "src/**/*.ts", "tests/jquerytest.ts" ]
+}
